@@ -10,6 +10,8 @@ export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
 
 /usr/local/bin/phpcs.phar \
   --report-checkstyle \
+  --ignore="${INPUT_PHPCS_IGNORE}" \
+  --extensions="${INPUT_PHPCS_EXTENSIONS}" \
   --standard="${INPUT_PHPCS_STANDARD}" \
   ${INPUT_PHPCS_ARGS:-\.} \
   | reviewdog -f="checkstyle" \

@@ -48,6 +48,12 @@ inputs:
   phpcs_args:
     description: 'Additional PHPCS flags'
     default: '.'
+  phpcs_extensions:
+    description: 'File extensions to check'
+    default: 'php,module,inc,install,test,profile,theme,css,info,txt,md,yml'
+  phpcs_ignore:
+    description: 'Files to ignore'
+    default: 'node_modules,bower_components,vendor'
   phpcs_standard:
     description: 'Coding standard for PHPCS to use when checking files'
     default: 'Drupal'
