@@ -20,7 +20,7 @@ RUN chmod +x /usr/local/bin/phpcs.phar
 
 # rulesets
 RUN mkdir -p /tmp/rulesets
-RUN wget -O - -q https://ftp.drupal.org/files/projects/coder-${RULESET_DRUPAL_CODER_VERSION}.tar.gz | tar zxv -C /tmp/rulesets --strip-components 2 --wildcards-match-slash --wildcards '*/WordPress*'
+RUN wget -O - -q https://ftp.drupal.org/files/projects/coder-${RULESET_DRUPAL_CODER_VERSION}.tar.gz | tar zxv -C /tmp/rulesets --strip-components 2 --wildcards-match-slash --wildcards '*/Drupal*'
 
 COPY entrypoint.sh /entrypoint.sh
 
