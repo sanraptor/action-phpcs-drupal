@@ -5,7 +5,7 @@
 
 echo 'Hello World!';
 
-$a = function_call();
+$a = function_call();       
 
 
 class TestFile {
